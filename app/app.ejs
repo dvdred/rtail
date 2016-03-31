@@ -91,7 +91,7 @@ angular
       ctrl.lines.push(formatLine(line))
 
       if (ctrl.lines.length > BUFFER_SIZE) {
-        ctrl.lines.length >= 100 && ctrl.lines.shift()
+        ctrl.lines.length >= 1000 && ctrl.lines.shift()
       }
 
       $scope.$apply()
